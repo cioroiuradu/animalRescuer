@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import java.time.LocalDateTime;
+
 /**
  * Hello world!
  *
@@ -24,7 +26,7 @@ public class App
     Food firstFood = new Food();
     firstFood.name = "Steak";
     firstFood.quantity = 3;
-//    firstFood.Date = "21/12/2018";
+    LocalDateTime expiryDate;
     firstFood.availability = true;
 
 
@@ -39,12 +41,6 @@ public class App
     firstAdopter.name = "Radu";
     firstAnimal.name = "Cat";
     firstVet.name = "Antonescu";
-//
-//    Car firstCompetitor= new Car();
-//    firstCompetitor.name = "Dacia";
-//    firstCompetitor.color = "black";
-//    firstCompetitor.doorCount = 5;
-//    firstCompetitor.mileage = 9.5;
-//    firstCompetitor.running = false;
+
     }
 }
