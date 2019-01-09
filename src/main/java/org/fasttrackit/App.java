@@ -1,11 +1,10 @@
 package org.fasttrackit;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.lang.String;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args ) {
@@ -26,7 +25,7 @@ public class App
     Food firstFood = new Food();
     firstFood.name = "Steak";
     firstFood.quantity = 3;
-    LocalDateTime expiryDate;
+    LocalDate year;
     firstFood.availability = true;
 
 
