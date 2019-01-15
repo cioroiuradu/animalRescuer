@@ -41,7 +41,8 @@ public class App
     firstGame.setDog("Gigel");
     firstGame.setVetName("Antonescu");
 
-
+    firstAdopter.feeding(firstAnimal, firstFood);
+    firstAdopter.recreation(firstAnimal, firstHobby);
 
     }
 }
