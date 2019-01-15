@@ -8,38 +8,40 @@ public class App
 {
     public static void main( String[] args ) {
 
-    Animal firstAnimal = new Animal("Costica", 3, 9,10,7,"Steak","Ball chasing");
-//    firstAnimal.name = "Costica";
-//    firstAnimal.age = 3;
-//    firstAnimal.healthLevel = 9;
-//    firstAnimal.hungerLevel = 10;
-//    firstAnimal.moodLevel = 7;
-//    firstAnimal.favouriteFood = "Steak";
-//    firstAnimal.hobby = "Ball chasing";
+    Animal firstAnimal = new Animal();
+    firstAnimal.setName("Costica");
+    firstAnimal.setAge(3);
+    firstAnimal.setHealthLevel(9);
+    firstAnimal.setHungerLevel(10);
+    firstAnimal.setMoodLevel(7);
+    firstAnimal.setFavouriteFood("Steak");
+    firstAnimal.setHobby("Ball Chasing");
 
-    Adopter firstAdopter = new Adopter("George", 500);
-//    firstAdopter.name = "George";
-//    firstAdopter.moneyAmount = 500;
+    Adopter firstAdopter = new Adopter();
+    firstAdopter.setName("George");
+    firstAdopter.setMoneyAmount(500);
 
-    Food firstFood = new Food("Steak",15,3, LocalDate.of(2020,12,31),true);
-//    firstFood.name = "Steak";
-//    firstFood.price = 15;
-//    firstFood.quantity = 3;
-//    LocalDate year;
-//    firstFood.availability = true;
+    Food firstFood = new Food();
+    firstFood.setName("Steak");
+    firstFood.setPrice(15);
+    firstFood.setQuantity(3);
+    firstFood.setYear(LocalDate.of(2020,12,31));
+    firstFood.setAvailability(true);
 
 
-    Hobby firstHobby = new Hobby("Ball Chasing");
-//    firstHobby.name = "Ball Chasing";
+    Hobby firstHobby = new Hobby();
+    firstHobby.setName("Ball Chasing");
 
-    Vet firstVet = new Vet("Ion","Surgery");
-//    firstVet.name = "Ion";
-//    firstVet.studyField = "Surgery";
+    Vet firstVet = new Vet();
+    firstVet.setName("Ion");
+    firstVet.setStudyField("Surgery");
 
-    Game firstGame = new Game("Radu","Gigel","Antonescu");
-//    firstAdopter.name = "Radu";
-//    firstAnimal.name = "Gigel";
-//    firstVet.name = "Antonescu";
+    Game firstGame = new Game();
+    firstGame.setName("Radu");
+    firstGame.setDog("Gigel");
+    firstGame.setVetName("Antonescu");
+
+
 
     }
 }
