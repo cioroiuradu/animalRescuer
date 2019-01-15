@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Hobby {
 
-    String name;
+    private String name;
     public Hobby(String name) {
         this.name = name;
     }

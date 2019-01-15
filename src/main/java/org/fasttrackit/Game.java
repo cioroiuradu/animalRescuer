@@ -1,10 +1,10 @@
 package org.fasttrackit;
 
 public class Game {
-    String name;
-    String dog;
+    protected String name;
+    protected String dog;
 
-    String vetName;
+    protected String vetName;
     public Game(String name, String dog, String vetName) {
         this.name = name;
         this.dog = dog;
