@@ -41,6 +41,8 @@ public class App
     firstGame.setDog("Gigel");
     firstGame.setVetName("Antonescu");
 
+    firstAnimal.setHungerLevel(9);
+    firstAnimal.setMoodLevel(10);
     firstAdopter.feeding(firstAnimal, firstFood);
     firstAdopter.recreation(firstAnimal, firstHobby);
 

@@ -26,11 +26,20 @@ public class Adopter {
     }
 
     public void feeding(Animal animal, Food food) {
-        System.out.println(getName() + " just gave some " + food.getName() + " food to " + animal.getName() );
+
+        System.out.println(animal.getName() + "'s initial hunger level is: " + animal.getHungerLevel());
+        animal.hungerLevel --;
+        System.out.println(getName() + " just gave some " + food.getName() + " food to " + animal.getName() +
+                " and the hunger level is: " + animal.getHungerLevel());
+
+
     }
 
     public void recreation(Animal animal, Hobby hobby) {
-        System.out.println(getName() + " went out with " + animal.getName() + " to " + hobby.getName());
+        System.out.println(animal.getName() + "'s initial mood level is: " + animal.getMoodLevel());
+        animal.moodLevel ++;
+        System.out.println(getName() + " went out with " + animal.getName() + " to " + hobby.getName() +
+                " and now the mood level is: " + animal.getMoodLevel());
     }
 
 
