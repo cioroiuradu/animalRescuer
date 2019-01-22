@@ -3,10 +3,10 @@ package org.fasttrackit;
 import java.time.LocalDate;
 
 public class Food {
-    private String name;
-    private double price;
-    private double quantity;
-    private LocalDate year;
+    protected String name;
+    protected double price;
+    protected double quantity;
+    protected LocalDate year;
     boolean availability;
 
 

@@ -42,7 +42,9 @@ public class App
     firstGame.setVetName("Antonescu");
 
     firstAnimal.setHungerLevel(9);
-    firstAnimal.setMoodLevel(10);
+    firstAnimal.setMoodLevel(9);
+    firstAnimal.setFavouriteFood("Steak");
+    firstAnimal.setHobby("aaaa");
     firstAdopter.feeding(firstAnimal, firstFood);
     firstAdopter.recreation(firstAnimal, firstHobby);
 
