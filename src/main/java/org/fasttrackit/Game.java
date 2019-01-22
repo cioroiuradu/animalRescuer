@@ -4,6 +4,9 @@ public class Game {
     protected String name;
     protected String dog;
     protected String vetName;
+//    private Adopter adopter;
+//    private Animal;
+//    private Vet doctor;
 
 //    public Game(String name, String dog, String vetName) {
 //        this.name = name;

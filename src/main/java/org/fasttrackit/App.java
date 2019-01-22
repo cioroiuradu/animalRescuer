@@ -44,11 +44,21 @@ public class App
     firstAdopter.feeding(firstAnimal, firstFood);
     firstAdopter.recreation(firstAnimal, firstHobby);
 
+        Animal secondAnimal = new Animal();
+        secondAnimal.setName("Loris");
+        secondAnimal.setMoodLevel(8);
+        secondAnimal.showMoodLevel(secondAnimal);
+
+
         Dog firstDog = new Dog();
-        firstDog.showMoodLevel(7);
+        firstDog.setName("Busti");
+        firstDog.setMoodLevel(10);
+        firstDog.showMoodLevel(firstDog);
 
         Cat firstCat = new Cat();
-        firstCat.showMoodLevel(10);
+        firstCat.setName("Aluna");
+        firstCat.setMoodLevel(10);
+        firstCat.showMoodLevel(firstCat);
 
 
     }

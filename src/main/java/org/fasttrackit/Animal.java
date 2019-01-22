@@ -81,8 +81,8 @@ public class Animal {
 
 
 
-    public void showMoodLevel(int moodLevel){
-        System.out.println("Mood level is: " + moodLevel);
+    public void showMoodLevel(Animal moodLevel){
+        System.out.println("Mood level is: " + moodLevel.getMoodLevel() + " and the name is: " + getName());
     }
 
 

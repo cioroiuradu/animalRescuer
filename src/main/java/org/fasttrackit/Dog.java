@@ -11,8 +11,8 @@ public class Dog extends Pet {
         this.barking = barking;
     }
     @Override
-    public void showMoodLevel(int moodLevel){
-        System.out.println("Dog's mood level is: " + moodLevel);
+    public void showMoodLevel(Animal moodLevel){
+        System.out.println(getName() + "'s mood level is: " + moodLevel.getMoodLevel());
     }
 
 }
