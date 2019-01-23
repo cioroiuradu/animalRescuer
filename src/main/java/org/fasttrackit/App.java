@@ -54,15 +54,15 @@ public class App
         secondAnimal.showMoodLevel(secondAnimal);
 
 
-        Dog firstDog = new Dog();
-        firstDog.setName("Busti");
-        firstDog.setMoodLevel(10);
-        firstDog.showMoodLevel(firstDog);
+        Animal dog = new Dog();
+        dog.setName("Busti");
+        dog.setMoodLevel(10);
+        dog.showMoodLevel(dog);
 
-        Cat firstCat = new Cat();
-        firstCat.setName("Aluna");
-        firstCat.setMoodLevel(10);
-        firstCat.showMoodLevel(firstCat);
+        Animal cat = new Cat();
+        cat.setName("Aluna");
+        cat.setMoodLevel(10);
+        cat.showMoodLevel(cat);
 
 
     }
