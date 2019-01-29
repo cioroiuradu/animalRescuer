@@ -65,6 +65,13 @@ public class App
         cat.showMoodLevel(cat);
 
 
+        Game game = new Game();
+        game.start();
+
     }
+
+
+
+
 
 }
