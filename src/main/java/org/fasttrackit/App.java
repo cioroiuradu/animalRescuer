@@ -6,7 +6,7 @@ import java.lang.String;
 
 public class App 
 {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws Exception {
 
     Animal firstAnimal = new Animal();
     firstAnimal.setName("Costica");
