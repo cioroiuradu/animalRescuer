@@ -134,6 +134,7 @@ public class Game {
 
     private void requireFeeding() {
         System.out.println("Please choose a food type for your pet from the above list: " + "or type another food type");
+        initFood();
         displayFood();
         Scanner scanner = new Scanner(System.in);
         String userInputFood = scanner.next();
@@ -152,23 +153,69 @@ public class Game {
         } else {
             Food food = new Food();
             initFood();
+            displayFood();
             food.setName(userInputFood);
             availableFood.add(food);
             System.out.println("The chosen food is: " + userInputFood);
         }
     }
 
+    private void requireActivity() {
+        initActivities();
+        displayActivies();
+        System.out.println("Please choose an activty to play with your pet:");
 
+        Scanner scanner = new Scanner(System.in);
+        String userInputActivity = scanner.next();
+
+        if(userInputActivity.equals("Running")) {
+            System.out.println("Chosen activity will be:" + availableActivities[0]);
+        }
+        if (userInputActivity.equals("Swimming")) {
+            System.out.println("Chosen activity will be:" + availableActivities[1]);
+        }
+        else {
+            Hobby hobby = new Hobby();
+            initActivities();
+            hobby.setName(userInputActivity);
+            availableActivities[2] = new Hobby();
+            availableActivities[2] = hobby;
+            System.out.println("The activity will be" + hobby.getName());
+        }
+    }
+
+    public void entireGame() {
+        Animal chosenAnimal = new Animal();
+        chosenAnimal.setMoodLevel(0);
+        chosenAnimal.setHungerLevel(0);
+        System.out.println("Please feed me until i am happy!");
+        System.out.println("My initial mood level is" + chosenAnimal.getMoodLevel() +
+                "and you have to play with me until the mood level until 10 ");
+        System.out.println("My initial hunger level is " + chosenAnimal.getHungerLevel() +
+                "and you have to feed me until the hunger level is 9");
+        while (chosenAnimal.moodLevel <= 10 && chosenAnimal.hungerLevel <= 9 ) {
+            requireActivity();
+            requireFeeding();
+            chosenAnimal.moodLevel++;
+            chosenAnimal.hungerLevel++;
+        }
+        System.out.println("Congratulations, you made the pet happy!");
+
+
+
+
+
+    }
 
     public void start() throws Exception {
-        initActivities();
+//        initActivities();
 //        displayFood();
-        displayActivies();
+//        displayActivies();
         initAnimal();
-        initRescuer();
         nameAnimal();
-        initFood();
-        requireFeeding();
+        initRescuer();
+//        initFood();
+        entireGame();
 
     }
     public void displayActivies() {
